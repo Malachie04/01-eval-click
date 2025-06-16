@@ -17,12 +17,11 @@ htmlContainer.addEventListener('click',(event)=>{
         //Déselection
         clickedElement.classList.remove('selected');
     }else{
+        //Supression de la classe selection sur tous les bouttons
         constElements.querySelectorAll('button').forEach(element => {
             element.classList.remove('selected');
         });
         //Ajout de la selection à la classe cible
         clickedElement.classList.add('selected');
     }
-
-    
 });
