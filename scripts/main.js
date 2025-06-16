@@ -2,11 +2,12 @@
 
 const htmlContainer=document.querySelector('.container');
 
-//Ajouter du click
+//Ajout du click sur le container pour da délégation des evements
 
 htmlContainer.addEventListener('click',(event)=>{
     event.preventDefault();
 
+    //Récupération de la cible clicquée
     let clickedElement=event.target;
 
     //Selection de tous les enfants du selecteurs
